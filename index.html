@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Ahmed Jamil & His Family | Gaza</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --accent: #16a34a;
+            --whatsapp: #25d366;
+            --linkedin: #0077b5;
+            --dark: #1f2937;
+            --light-bg: #f9fafb;
+            --white: #ffffff;
+            --danger: #dc2626;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--light-bg);
+            color: var(--dark);
+            line-height: 1.7;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        header {
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: var(--danger); /* Changed to red to reflect urgency */
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #6b7280;
+            margin-bottom: 20px;
+        }
+
+        /* --- Hero Image Section --- */
+        .hero-image-container {
+            width: 100%;
+            max-height: 400px;
+            overflow: hidden;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            margin-bottom: 40px;
+            border: 4px solid var(--white);
+        }
+
+        .hero-image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Keeps ratio, covers area */
+            display: block;
+        }
+        /* --------------------------- */
+
+        .story-card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 20px;
+            text-align: left;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            margin-bottom: 40px;
+            border-left: 5px solid var(--danger);
+        }
+
+        .story-card h2 {
+            margin-bottom: 15px;
+            color: var(--danger);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 25px;
+        }
+
+        .card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.2s ease;
+            border: 1px solid #e5e7eb;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 14px;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: 600;
+            transition: all 0.3s;
+            cursor: pointer;
+            border: none;
+            font-size: 1rem;
+            margin-top: 15px;
+        }
+
+        .btn-blue { background: var(--primary); color: white; }
+        .btn-green { background: var(--accent); color: white; }
+        .btn-dark { background: var(--dark); color: white; }
+        .btn-whatsapp { background: var(--whatsapp); color: white; }
+        .btn-linkedin { background: var(--linkedin); color: white; }
+
+        .btn:hover { opacity: 0.9; transform: scale(1.02); }
+
+        .crypto-container {
+            background: #f3f4f6;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            font-family: monospace;
+            word-break: break-all;
+            font-size: 0.9rem;
+            border: 1px solid #d1d5db;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        footer {
+            margin-top: 60px;
+            color: #9ca3af;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            .container { margin-top: 20px; }
+            h1 { font-size: 1.8rem; }
+            .hero-image-container { max-height: 250px; }
+            .contact-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Emergency Support for Ahmed’s Family</h1>
+            <p class="subtitle">Facing displacement and survival in Gaza.</p>
+        </header>
+
+        <div class="hero-image-container">
+            <img src="gaza_situation.jpg" alt="Current situation in Gaza detailing destruction and displacement" onerror="this.style.display='none'">
+            </div>
+        <section class="story-card">
+            <h2>Our Reality</h2>
+            <p>My name is <strong>Ahmed Jamil</strong>, from Rafah, Gaza. I was a student of <strong>Computer Information Systems</strong>, preparing for a future that has been violently put on hold. The war has stripped us of everything—our home, my studies, and our security.</p>
+            <p style="margin-top: 10px; font-weight: 600; color: var(--danger);">Currently, I am displaced, unemployed, and responsible for my family's survival as we struggle with homelessness and the lack of basic necessities.</p>
+            <p style="margin-top: 10px;">Your kindness is our only glimpse of hope.</p>
+        </section>
+
+        <div class="grid">
+            <div class="card">
+                <h3>1. Chuffed Campaign</h3>
+                <p>Verify and support our official campaign on the Chuffed platform.</p>
+                <a href="https://chuffed.org/project/168391-stand-with-a-displaced-family-from-gaza-no-home-no-refuge" target="_blank" class="btn btn-blue">Donate via Chuffed</a>
+            </div>
+
+            <div class="card">
+                <h3>2. HelpFundGaza (Direct & Fee-Free)</h3>
+                <p>Support us directly. This platform charges zero transaction fees.</p>
+                <a href="https://www.helpfundgaza.com/profile/ahmed-jamil" target="_blank" class="btn btn-green">Donate via HelpFundGaza</a>
+            </div>
+
+            <div class="card">
+                <h3>3. Crypto Donation (USDT)</h3>
+                <p>Send USDT (TRC20 network) directly to our wallet.</p>
+                <div class="crypto-container" id="wallet">TDRr5CmsZU6zYsTiC1FhY9SuBFrmR9EHfY</div>
+                <button onclick="copyWallet()" class="btn btn-dark" id="copyBtn">Copy Address</button>
+            </div>
+        </div>
+
+        <section class="card" style="margin-top: 40px; border-top: 4px solid var(--danger);">
+            <h3>Verify & Connect</h3>
+            <p>I understand the need for trust. Please reach out if you have questions or wish to verify our situation.</p>
+            <div class="contact-grid">
+                <a href="https://wa.me/970595438455" target="_blank" class="btn btn-whatsapp">WhatsApp</a>
+                <a href="https://www.linkedin.com/in/ahmed-jamil-2a6059270?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="btn btn-linkedin">LinkedIn</a>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Ahmed Jamil. From Rafah, Gaza. Thank you for your humanity.</p>
+        </footer>
+    </div>
+
+    <script>
+        function copyWallet() {
+            const address = document.getElementById('wallet').innerText;
+            const btn = document.getElementById('copyBtn');
+            navigator.clipboard.writeText(address).then(() => {
+                const originalText = btn.innerText;
+                btn.innerText = "Address Copied! ✓";
+                btn.style.backgroundColor = "#16a34a";
+                setTimeout(() => {
+                    btn.innerText = originalText;
+                    btn.style.backgroundColor = "#1f2937";
+                }, 2000);
+            });
+        }
+    </script>
+
+</body>
+</html>
