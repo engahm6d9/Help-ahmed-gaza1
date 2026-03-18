@@ -1,393 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Support Ahmed Jamil & His Family | Gaza</title>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+    <title>تبرع بالكريبتو | دعم المشروع</title>
     <style>
-        :root {
-            --primary: #2563eb;
-            --primary-dark: #1e40af;
-            --accent: #10b981;
-            --danger: #ef4444;
-            --text-main: #1f2937;
-            --text-muted: #6b7280;
-            --bg-gradient: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
-            --white: #ffffff;
-            --card-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            background: var(--bg-gradient);
-            color: var(--text-main);
-            line-height: 1.6;
-            min-height: 100vh;
-        }
-
-        .container {
-            max-width: 850px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-
-        /* --- Header Section --- */
-        header {
-            text-align: center;
-            margin-bottom: 50px;
-            animation: fadeInDown 0.8s ease-out;
-        }
-
-        .urgent-badge {
-            background: #fee2e2;
-            color: var(--danger);
-            padding: 6px 16px;
-            border-radius: 50px;
-            font-weight: 700;
-            font-size: 0.85rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            display: inline-block;
-            margin-bottom: 15px;
-        }
-
-        h1 {
-            font-size: 3rem;
-            font-weight: 800;
-            line-height: 1.1;
-            margin-bottom: 15px;
-            background: linear-gradient(to right, #1f2937, #ef4444);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .subtitle {
-            font-size: 1.15rem;
-            color: var(--text-muted);
-        }
-
-        /* --- Hero Image --- */
-        .hero-container {
-            position: relative;
-            border-radius: 30px;
-            overflow: hidden;
-            box-shadow: 0 20px 50px rgba(0,0,0,0.1);
-            margin-bottom: -60px; /* Overlap effect */
-            z-index: 2;
-            animation: zoomIn 1s ease-out;
-        }
-
-        .hero-container img {
-            width: 100%;
-            height: 450px;
-            object-fit: cover;
-            display: block;
-            transition: transform 0.5s;
-        }
-
-        .hero-container:hover img {
-            transform: scale(1.03);
-        }
-
-        /* --- Story Card --- */
-        .story-card {
-            background: var(--white);
-            padding: 100px 40px 40px; /* Extra top padding for overlap */
-            border-radius: 30px;
-            box-shadow: var(--card-shadow);
-            margin-bottom: 30px;
-            position: relative;
-            z-index: 1;
-        }
-
-        .story-card h2 {
-            font-size: 1.8rem;
-            margin-bottom: 20px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .story-card h2::after {
-            content: "";
-            flex: 1;
-            height: 2px;
-            background: #f1f5f9;
-        }
-
-        .story-content p {
-            margin-bottom: 15px;
-            font-size: 1.1rem;
-            color: #4b5563;
-        }
-
-        .highlight-box {
-            background: #fef2f2;
-            border-left: 4px solid var(--danger);
-            padding: 20px;
-            border-radius: 12px;
-            margin: 20px 0;
-            font-weight: 600;
-            color: #991b1b;
-        }
-
-        /* --- Donation Grid --- */
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-            margin-top: 30px;
-        }
-
-        .card {
-            background: var(--white);
-            padding: 30px;
-            border-radius: 24px;
-            box-shadow: var(--card-shadow);
-            transition: all 0.3s ease;
-            display: flex;
-            flex-direction: column;
-            border: 1px solid rgba(0,0,0,0.03);
-        }
-
-        .card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 30px -10px rgba(0,0,0,0.1);
-        }
-
-        .card-icon {
-            width: 50px;
-            height: 50px;
-            background: #eff6ff;
-            color: var(--primary);
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-            margin-bottom: 20px;
-        }
-
-        .card h3 {
-            margin-bottom: 12px;
-            font-size: 1.25rem;
-        }
-
-        .card p {
-            font-size: 0.95rem;
-            color: var(--text-muted);
-            margin-bottom: auto;
-            padding-bottom: 20px;
-        }
-
-        /* --- Buttons --- */
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            width: 100%;
-            padding: 14px 24px;
-            text-decoration: none;
-            border-radius: 14px;
-            font-weight: 700;
-            transition: all 0.3s;
-            cursor: pointer;
-            border: none;
-            font-size: 1rem;
-        }
-
-        .btn-primary { background: var(--primary); color: white; }
-        .btn-primary:hover { background: var(--primary-dark); box-shadow: 0 8px 15px rgba(37, 99, 235, 0.3); }
-
-        .btn-success { background: var(--accent); color: white; }
-        .btn-success:hover { box-shadow: 0 8px 15px rgba(16, 185, 129, 0.3); opacity: 0.9; }
-
-        .btn-outline { 
-            background: transparent; 
-            border: 2px solid #e2e8f0; 
-            color: var(--text-main); 
-        }
-        .btn-outline:hover { background: #f8fafc; border-color: #cbd5e1; }
-
-        /* --- Crypto Section --- */
-        .crypto-box {
-            background: #f1f5f9;
-            padding: 15px;
-            border-radius: 12px;
-            margin-bottom: 15px;
-            font-family: 'Monaco', 'Consolas', monospace;
-            word-break: break-all;
-            font-size: 0.85rem;
-            color: #475569;
-            border: 1px dashed #cbd5e1;
-            position: relative;
-        }
-
-        /* --- Footer Contact --- */
-        .contact-section {
-            background: #1e293b;
-            color: white;
-            padding: 40px;
-            border-radius: 30px;
-            margin-top: 40px;
-            text-align: center;
-        }
-
-        .contact-btns {
-            display: flex;
-            gap: 15px;
-            justify-content: center;
-            margin-top: 25px;
-            flex-wrap: wrap;
-        }
-
-        .social-btn {
-            padding: 12px 25px;
-            border-radius: 50px;
-            color: white;
-            text-decoration: none;
-            font-weight: 600;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            transition: 0.3s;
-        }
-
-        .wa { background: #25d366; }
-        .li { background: #0077b5; }
-        .social-btn:hover { transform: scale(1.05); filter: brightness(1.1); }
-
-        footer {
-            margin-top: 50px;
-            padding-bottom: 40px;
-            text-align: center;
-            color: var(--text-muted);
-            font-size: 0.9rem;
-        }
-
-        /* --- Animations --- */
-        @keyframes fadeInDown {
-            from { opacity: 0; transform: translateY(-20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        @keyframes zoomIn {
-            from { opacity: 0; transform: scale(0.95); }
-            to { opacity: 1; transform: scale(1); }
-        }
-
-        /* --- Mobile Optimization --- */
-        @media (max-width: 640px) {
-            h1 { font-size: 2.2rem; }
-            .hero-container img { height: 280px; }
-            .story-card { padding: 80px 25px 30px; }
-            .container { padding: 20px 15px; }
-            .contact-btns { flex-direction: column; }
-        }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f7f6; color: #333; text-align: center; padding: 50px 20px; }
+        .card { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); max-width: 500px; margin: 0 auto; }
+        .crypto-icon { width: 60px; height: 60px; margin-bottom: 20px; }
+        .address-box { background: #eee; padding: 15px; border-radius: 8px; word-break: break-all; font-family: monospace; font-size: 1.1em; margin: 20px 0; border: 1px dashed #26a17b; }
+        .network-tag { background: #26a17b; color: white; padding: 5px 12px; border-radius: 20px; font-size: 0.8em; }
+        .copy-btn { background: #26a17b; color: white; border: none; padding: 10px 25px; border-radius: 5px; cursor: pointer; transition: 0.3s; }
+        .copy-btn:hover { background: #1e7e60; }
+        .warning { color: #d9534f; font-size: 0.9em; margin-top: 15px; }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <header>
-            <span class="urgent-badge">Urgent Appeal</span>
-            <h1>Help Ahmed's Family Survive</h1>
-            <p class="subtitle">A CIS student's journey from dreams to displacement.</p>
-        </header>
+    <div class="card">
+        <img src="https://cryptologos.cc/logos/tether-usdt-logo.png" alt="USDT Logo" class="crypto-icon">
+        <h2>ادعمنا عبر USDT</h2>
+        <p>نقبل التبرعات عبر شبكة TRON فقط</p>
+        <span class="network-tag">Network: TRC20</span>
 
-        <div class="hero-container">
-            <img src="gaza_situation.jpg" alt="Support Gaza" onerror="this.src='https://images.unsplash.com/photo-1516733968668-dbdce39c46ef?auto=format&fit=crop&w=1200&q=80'">
+        <div class="address-box" id="walletAddress">
+            TDRr5CmsZU6zYsTiC1FhY9SuBFrmR9EHfY
         </div>
 
-        <section class="story-card">
-            <h2><i class="fa-solid fa-feather-pointed" style="color: var(--danger);"></i> The Reality</h2>
-            <div class="story-content">
-                <p>My name is <strong>Ahmed Jamil</strong>. I was a student of Computer Information Systems in Rafah, building a life through technology and learning. The war has turned our world upside down, leaving us without a home or a future.</p>
-                
-                <div class="highlight-box">
-                    "We have lost our shelter and our security. Today, I am the sole provider for my family in a place where basic survival is a daily battle."
-                </div>
-                
-                <p>Every donation, no matter the size, is a bridge to safety and a testament to human solidarity.</p>
-            </div>
-        </section>
+        <button class="copy-btn" onclick="copyAddress()">نسخ العنوان</button>
 
-        <div class="grid">
-            <div class="card">
-                <div class="card-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
-                <h3>Chuffed Campaign</h3>
-                <p>Support our verified campaign. A secure way to donate and share our story with the world.</p>
-                <a href="https://chuffed.org/project/168391-stand-with-a-displaced-family-from-gaza-no-home-no-refuge" target="_blank" class="btn btn-primary">
-                    Donate via Chuffed <i class="fa-solid fa-arrow-right"></i>
-                </a>
-            </div>
-
-            <div class="card">
-                <div class="card-icon" style="background: #ecfdf5; color: var(--accent);"><i class="fa-solid fa-bolt"></i></div>
-                <h3>Direct Support</h3>
-                <p>HelpFundGaza allows direct contributions with 0% platform fees, ensuring more help reaches us.</p>
-                <a href="https://www.helpfundgaza.com/profile/ahmed-jamil" target="_blank" class="btn btn-success">
-                    Use HelpFundGaza <i class="fa-solid fa-arrow-right"></i>
-                </a>
-            </div>
-
-            <div class="card">
-                <div class="card-icon" style="background: #f8fafc; color: #475569;"><i class="fa-brands fa-bitcoin"></i></div>
-                <h3>Crypto (USDT)</h3>
-                <p>Support via TRC20 network. Fast and borderless. Click to copy the address below.</p>
-                <div class="crypto-box" id="wallet">TDRr5CmsZU6zYsTiC1FhY9SuBFrmR9EHfY</div>
-                <button onclick="copyWallet()" class="btn btn-outline" id="copyBtn">
-                    <i class="fa-regular fa-copy"></i> Copy Address
-                </button>
-            </div>
-        </div>
-
-        <section class="contact-section">
-            <h3>Trust & Transparency</h3>
-            <p>I am available to answer any questions or provide verification of our situation.</p>
-            <div class="contact-btns">
-                <a href="https://wa.me/970595438455" target="_blank" class="social-btn wa">
-                    <i class="fa-brands fa-whatsapp"></i> WhatsApp Me
-                </a>
-                <a href="https://www.linkedin.com/in/ahmed-jamil-2a6059270" target="_blank" class="social-btn li">
-                    <i class="fa-brands fa-linkedin"></i> LinkedIn Profile
-                </a>
-            </div>
-        </section>
-
-        <footer>
-            <p>&copy; 2026 Ahmed Jamil | Rafah, Gaza</p>
-            <p style="margin-top: 5px;">Built with hope and gratitude.</p>
-        </footer>
+        <p class="warning">تأكد من إرسال USDT عبر شبكة (TRC20) فقط لتجنب فقدان الأموال.</p>
     </div>
 
     <script>
-        function copyWallet() {
-            const address = document.getElementById('wallet').innerText;
-            const btn = document.getElementById('copyBtn');
-            navigator.clipboard.writeText(address).then(() => {
-                const originalContent = btn.innerHTML;
-                btn.innerHTML = '<i class="fa-solid fa-check"></i> Copied!';
-                btn.style.backgroundColor = "#f0fdf4";
-                btn.style.borderColor = "#22c55e";
-                btn.style.color = "#15803d";
-                
-                setTimeout(() => {
-                    btn.innerHTML = originalContent;
-                    btn.style.backgroundColor = "transparent";
-                    btn.style.borderColor = "#e2e8f0";
-                    btn.style.color = "var(--text-main)";
-                }, 2000);
-            });
+        function copyAddress() {
+            const address = document.getElementById('walletAddress').innerText;
+            navigator.clipboard.writeText(address);
+            alert("تم نسخ العنوان بنجاح!");
         }
     </script>
 
